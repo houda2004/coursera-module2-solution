@@ -7,38 +7,66 @@
 </head>
 <body>
     <style>
-     
-       .section-1,.section-2,.section-3{
+        body{
+            margin: 0;
+            padding: 0;
+        }
+       h1{
+        text-align: center;
+       }
+       .main{
+        width: 100%;
+        float: left;
+        margin: 9px;
+        box-sizing: border-box;
+       }
+       .section-1 , .section-2 , .section-3{
             background-color: rgb(190, 189, 189);
-            border: black 1px;
-            width: 33%;
-            box-sizing: border-box;
+            border: 1px black solid;
+            width: 33.33%;
+            height: 100%;
             float: left;
-            margin: 2px;
+            margin: 9px;
+            box-sizing: border-box;
+        }
+        h4{  
+          float:right;  
+          width:100px;
+          text-align: center;
+          padding: 5px;
+          border: black 2px solid;
+          background-color: palevioletred;
+          clear: left;
+        }
+        article{
+            clear:right; 
         }
        
         @media (Max-width:991px){
            .section-1, .section-2{
                 width: 50%;
             }
+            .section-2{
+                float: right;
+               clear: right;
+            }
             .section-3{
                 width: 100%;
+                clear: right;
             }
 
         }
         @media (max-width:767px){
-          
-           
-            .section-1, .section-2 ,.section-3{
+            .section-1 , .section-2 , .section-3{
                 width: 100%;
             }
         }
     </style>
     <h1>our Mneu</h1>
-    
+    <section class="main">
        <section class="section-1">
         <h4>Chicken</h4>
-        <article></article>
+        <article>jjjjjjjjjjjjjjjj</article>
        </section>
 
        <section class="section-2">
@@ -51,6 +79,6 @@
         <article></article>
       </section>
 
-
+    </section>
 </body>
 </html>
