@@ -14,71 +14,78 @@
        h1{
         text-align: center;
        }
-       .main{
-        width: 100%;
-        float: left;
-        margin: 9px;
-        box-sizing: border-box;
-       }
-       .section-1 , .section-2 , .section-3{
-            background-color: rgb(190, 189, 189);
-            border: 1px black solid;
-            width: 33.33%;
-            height: 100%;
-            float: left;
-            margin: 9px;
-            box-sizing: border-box;
-        }
-        h4{  
-          float:right;  
-          width:100px;
-          text-align: center;
-          padding: 5px;
-          border: black 2px solid;
-          background-color: palevioletred;
-          clear: left;
-        }
-        article{
-            clear:right; 
-        }
-       
-        @media (Max-width:991px){
-           .section-1, .section-2{
-                width: 50%;
-            }
-            .section-2{
-                float: right;
-               clear: right;
-            }
-            .section-3{
-                width: 100%;
-                clear: right;
-            }
+section  {
+    float: left;
+    width: 90%;
+    margin: 40px;
+}
+.section {
+  background-color: rgb(204, 204, 204);
+  float: left;
+  position: relative;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 5px 0;
+}
 
-        }
-        @media (max-width:767px){
-            .section-1 , .section-2 , .section-3{
-                width: 100%;
-            }
-        }
+.section-title {
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  width: 80px;
+  border: 1px solid black;
+  padding: 5px;
+}
+#chicken .section-title{
+    background-color: palevioletred;
+    color: aliceblue;
+}
+#beef .section-title{
+    background-color: rgb(223, 60, 60);
+    color: aliceblue;
+}
+#sushi .section-title{
+    background-color: rgb(255, 251, 29);
+    
+}
+@media (max-width: 767px){
+   .section{
+    width: 100%;
+   }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    width: 50%;
+  }
+  #sushi {
+    width: 100%;
+  }
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+  .section {
+    width: 33.33%;
+  }
+}
+
     </style>
     <h1>our Mneu</h1>
-    <section class="main">
-       <section class="section-1">
-        <h4>Chicken</h4>
-        <article>jjjjjjjjjjjjjjjj</article>
-       </section>
-
-       <section class="section-2">
-        <h4>Beef</h4>
-        <article></article>
-       </section>
-
-       <section class="section-3">
-        <h4>Sushi</h4>
-        <article></article>
-      </section>
-
-    </section>
+   <section>
+      <div class="section" id="chicken">
+        <div class="section-title">Chicken</div>
+        <p>Lorem ipsum...</p>
+      </div>
+      <div class="section" id="beef">
+        <div class="section-title">Beef</div>
+        <p>Lorem ipsum...</p>
+      </div>
+      <div class="section" id="sushi">
+        <div class="section-title">Sushi</div>
+        <p>Lorem ipsum...</p>
+      </div>
+    </section>  
 </body>
 </html>
